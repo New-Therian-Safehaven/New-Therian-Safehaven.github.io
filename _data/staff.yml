@@ -1,5 +1,6 @@
 - name: "Pine ♡"
   disc: 9978
+  img: "pine_needle"
   pronouns:
     - "She/Her"
     - "They/Them"
@@ -12,6 +13,7 @@
       blue: "false"
 - name: "Aspen"
   disc: 0427
+  img: "aspen"
   pronouns:
     - "He/Him"
   kintypes:
@@ -23,6 +25,7 @@
       blue: "true"
 - name: "M:VE ⇰ Your local cryptid."
   disc: 3058
+  img: "mve"
   pronouns:
     - "He/Him"
    kintypes:
@@ -32,6 +35,7 @@
       blue: "true"
 - name: "g ö ö s"
   disc: 7125
+  img: "youta_funai"
   pronouns:
     - "He/Him"
     - "They/Them"
@@ -51,6 +55,7 @@
       blue: "false"
 - name: "gõõß"
   disc: 7371
+  img: "taga-ilog"
   pronouns:
     - "He/Him"
     - "They/Them"
@@ -66,6 +71,7 @@
       blue: "false"
 - name: "🐱eboy gremlin🦖"
   disc: 2408
+  img: "gremlin"
   pronouns:
     - "She/Her"
   kintypes:
