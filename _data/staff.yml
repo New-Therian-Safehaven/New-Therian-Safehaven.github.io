@@ -1,0 +1,77 @@
+- name: "Pine ♡"
+  disc: 9978
+  pronouns:
+    - "She/Her"
+    - "They/Them"
+  kintypes:
+    - name: "White Swiss Sheperd"
+      blue: "false"
+    - name: "Keith Kogane"
+      blue: "false"
+    - name: "D.Va"
+      blue: "false"
+- name: "Aspen"
+  disc: 0427
+  pronouns:
+    - "He/Him"
+  kintypes:
+    - name: "Bat"
+      blue: "false"
+    - name: "Gillman"
+      blue: "false"
+    - name: "Other"
+      blue: "true"
+- name: "M:VE ⇰ Your local cryptid."
+  disc: 3058
+  pronouns:
+    - "He/Him"
+   kintypes:
+    - name: "Otherkin"
+      blue: "true"
+    - name: "Fictionkin"
+      blue: "true"
+- name: "g ö ö s"
+  disc: 7125
+  pronouns:
+    - "He/Him"
+    - "They/Them"
+    - "It/Its"
+  kintypes:
+    - name: "Oriental Dragon"
+      blue: "false"
+    - name: "Observer/Watcher Demon"
+      blue: "false"
+    - name: "Guido Mista"
+      blue: "false"
+    - name: "Koichi Hirose"
+      blue: "false"
+    - name: "Noriaki Kakyoin"
+      blue: "false"
+    - name: "Vash the Stampede"
+      blue: "false"
+- name: "gõõß"
+  disc: 7371
+  pronouns:
+    - "He/Him"
+    - "They/Them"
+    - "Xe/Xim"
+  kintypes:
+    - name: "Vampire"
+      blue: "false"
+    - name: "Octoling"
+      blue: "false"
+    - name: "Wolf"
+      blue: "false"
+    - name: "Demon/Fallen Angel"
+      blue: "false"
+- name: "🐱eboy gremlin🦖"
+  disc: 2408
+  pronouns:
+    - "She/Her"
+  kintypes:
+    - name: "Mountain Lion"
+      blue: "false"
+    - name: "Deinonychus"
+      blue: "false"
+    - name: "Werewolfkith
+      blue: "false"
