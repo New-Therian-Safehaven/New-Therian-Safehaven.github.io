@@ -64,7 +64,29 @@
 		</section>
 		<section class="section" id="staff">
 			<h1 class="title">Staff</h1>
-			<article class="media" id="pine_needle">
+			{% for member in site.data.staff %}
+				<article class="media id="{{ member.img }}">
+					<figure class="media-left">
+						<p class="image is-64x64">
+							<img src="{{ member.img }}">
+						</p>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<span>
+								<strong>{{ member.name }}</strong><small>#{{ member.disc }}</small>
+								<div class="tags has-addons">
+									<div class="tag is-primary">Pronouns:</div>
+									{% for pronoun in member.pronouns %}<div class="tag">{{ pronoun }}</div>{% endfor %}
+								</div>
+								<div class="tags has-addons">
+									<div class="tag is-success">Kintypes:</div>
+									{% for kintype in member.kintypes %}<div class="tag{% if kintype.blue == "true" %} is-info{% endif %}">{{ kintype.name }}</div>{% endfor %}
+							</span>
+						</div>
+				</article>
+			{% endfor %}
+			<!--<article class="media" id="pine_needle">
 				<figure class="media-left">
 					<p class="image is-64x64">
 						<img src="pine_needle.png">
@@ -169,31 +191,6 @@
 				</div>
 			</article>
 			
-			<!--<article class="media" id="the_entity">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="https://cdn.discordapp.com/avatars/289844812025167872/decc61138ca809cf88bf6a4845861a39.png">
-					</p>
-				</figure>
-				<div class="media-content">
-					<div class="content">
-						<span>
-							<strong>XTheEntityX</strong><small>#4750</small><br>
-							<div class="tags has-addons">
-								<div class="tag is-primary">Pronouns:</div>
-								<div class="tag is-success is-light">Any</div>
-							</div>
-							<div class="tags has-addons">
-								<div class="tag is-success">Kintypes:</div>
-								<div class="tag is-info">Otherkin</div>
-								<div class="tag is-info">Therian</div>
-								<div class="tag is-info">Fickin</div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</article>-->
-			
 			<article class="media" id="taga-ilog">
 				<figure class="media-left">
 					<p class="image is-64x64">
@@ -242,7 +239,7 @@
 						</div>
 					</span>
 				</div>
-			</article>
+			</article>-->
 		</section>
 		<footer class="footer" id="join">
 			<div class="content has-text-centered tags has-addons is-centered">
