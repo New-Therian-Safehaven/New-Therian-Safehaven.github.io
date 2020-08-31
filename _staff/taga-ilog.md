@@ -8,7 +8,7 @@ pronouns:
   - They/Them
 kintypes:
   - Vampire
-  = Wolf
+  - Wolf
   - Octoling
   - Demon/Fallen Angel
 ---
