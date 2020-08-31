@@ -1,3 +1,4 @@
+---
 name: g ö ö s
 number: 7125
 pfp: /images/youta_funai.png
@@ -12,3 +13,4 @@ kintypes:
   - Koichi Hirose
   - Noriaki Kakyoin
   - Vash the Stampede
+---

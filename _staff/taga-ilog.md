@@ -1,5 +1,6 @@
+---
 name: taga-ilog
-numbre: 7371
+number: 7371
 pfp: /images/tagailog.png
 pronouns:
   - He/Him
@@ -10,3 +11,4 @@ kintypes:
   = Wolf
   - Octoling
   - Demon/Fallen Angel
+---

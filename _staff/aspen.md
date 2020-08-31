@@ -1,3 +1,4 @@
+---
 name: Aspen
 number: 0427
 pfp: /images/aspen.png
@@ -7,3 +8,4 @@ kintypes:
   - Bat
   - Gillman
   - Other
+---

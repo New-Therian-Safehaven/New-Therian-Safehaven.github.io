@@ -1,6 +1,12 @@
 collections:
     staff:
         output: false
+        order:
+            - pine_needle.md
+            - aspen.md
+            - mve.md
+            - youta_funai.md
+            - taga-ilog.md
 plugins:
     - jekyll-feed
     - jekyll-sitemap
