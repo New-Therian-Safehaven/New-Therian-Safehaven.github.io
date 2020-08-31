@@ -1,5 +1,5 @@
 collections:
-    authors:
+    staff:
         output: false
 plugins:
     - jekyll-feed
