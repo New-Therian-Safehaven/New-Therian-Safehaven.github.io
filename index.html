@@ -1,13 +1,14 @@
 ---
 ---
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns#" lang='en">
 	<head>
 		<meta charset="utf-8">
 		<title>New Therian Safehaven</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-site-verification" content="Shc9YmCMCBTISww7LoMg5ocAA2S3MaLfMP_-RkYXeOA" />
 		<meta name="theme-color" content="#9E8D73">
+		<meta name="description" content="Join our Therian-friendy Discord server">
 		
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="New Therian Safehaven" />
@@ -63,183 +64,8 @@
 			<h1 class="title">About</h1><br>New Therian Safehaven is a server with the goal of bringing therians together. Therians can learn more about therianthropy, discover a small community, and interact with each other on New Therian Safehaven.
 		</section>
 		<section class="section" id="staff">
-			<h1 class="title">Staff</h1>
-			{% for member in site.data.staff %}
-				<article class="media id="{{ member.img }}">
-					<figure class="media-left">
-						<p class="image is-64x64">
-							<img src="{{ member.img }}">
-						</p>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<span>
-								<strong>{{ member.name }}</strong><small>#{{ member.disc }}</small>
-								<div class="tags has-addons">
-									<div class="tag is-primary">Pronouns:</div>
-									{% for pronoun in member.pronouns %}<div class="tag">{{ pronoun }}</div>{% endfor %}
-								</div>
-								<div class="tags has-addons">
-									<div class="tag is-success">Kintypes:</div>
-									{% for kintype in member.kintypes %}<div class="tag{% if kintype.blue == "true" %} is-info{% endif %}">{{ kintype.name }}</div>{% endfor %}
-							</span>
-						</div>
-				</article>
-			{% endfor %}
-			<!--<article class="media" id="pine_needle">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="pine_needle.png">
-					</p>
-				</figure>
-				<div class="media-content">
-					<div class="content">
-						<span>
-							<strong>Pine ♡</strong><small>#9978</small><br>
-							<div class="tags has-addons">
-								<div class="tag is-primary">Pronouns:</div>
-								<div class="tag">She/Her</div>
-								<div class="tag">They/Them</div>
-							</div>
-							<div class="tags has-addons">
-								<div class="tag is-success">Kintypes:</div>
-								<div class="tag">White Swiss Shepherd</div>
-								<div class="tag">Keith Kogane</div>
-								<div class="tag">D.Va</div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</article>
-			
-			<article class="media" id="aspen">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="aspen.png">
-					</p>
-				</figure>
-				<div class="media-content">
-					<div class="content">
-						<span>
-							<strong>Aspen</strong><small>#0427</small><br>
-							<div class="tags has-addons">
-								<div class="tag is-primary">Pronouns:</div>
-								<div class="tag">He/Him</div>
-							</div>
-							<div class="tags has-addons">
-								<div class="tag is-success">Kintypes:</div>
-								<div class="tag">Bat</div>
-								<div class="tag">Gillman</div>
-								<div class="tag is-info">Other</div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</article>
-			
-			<article class="media" id="m:ve">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="mve.png">
-					</p>
-				</figure>
-				<div class="media-content">
-					<div class="content">
-						<span>
-							<strong>M:VE ⇰ Your local cryptid.</strong><small>#3058</small><br>
-							<div class="tags has-addons">
-								<div class="tag is-primary">Pronouns:</div>
-								<div class="tag">He/Him</div>
-							</div>
-							<div class="tags has-addons">
-								<div class="tag is-success">Kintypes:</div>
-								<div class="tag is-info">Otherkin</div>
-								<div class="tag is-info">Fictionkin</div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</article>
-			
-			<article class="media" id="youta_funai">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="youta_funai.png">
-					</p>
-				</figure>
-				<div class="media-content">
-					<div class="content">
-						<span>
-							<strong>g ö ö s</strong><small>#7125</small><br>
-							<div class="tags has-addons">
-								<div class="tag is-primary">Pronouns:</div>
-								<div class="tag">He/Him</div>
-								<div class="tag">They/Them</div>
-								<div class="tag">It/Its</div>
-							</div>
-							<div class="tags has-addons">
-								<div class="tag is-success">Kintypes:</div>
-								<div class="tag">Oriental Dragon</div>
-								<div class="tag">Observer/Watcher Demon</div>
-								<div class="tag">Guido Mista</div>
-								<div class="tag">Koichi Hirose</div>
-								<div class="tag">Noriaki Kakyoin</div>
-								<div class="tag">Vash the Stampede</div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</article>
-			
-			<article class="media" id="taga-ilog">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="taga-ilog.png">
-					</p>
-				</figure>
-				<div class="media-content">
-					<div class="content">
-						<span>
-							<strong>gõõß</strong><small>#7371</small><br>
-							<div class="tags has-addons">
-								<div class="tag is-primary">Pronouns:</div>
-								<div class="tag">He/Him</div>
-								<div class="tag">They/Them</div>
-								<div class="tag">Xe/Xim</div>
-							</div>
-							<div class="tags has-addons">
-								<div class="tag is-success">Kintypes:</div>
-								<div class="tag">Vampire</div>
-								<div class="tag">Octoling</div>
-								<div class="tag">Wolf</div>
-								<div class="tag">Demon/Fallen Angel</div>
-							</div>
-						</span>
-					</div>
-				</div>
-			</article>
-			<article class="media" id="gremlin">
-				<figure class="media-left">
-					<p class="image is-64x64">
-						<img src="gremlin.png">
-					</p>
-				</figure>
-				<div class="content">
-					<span>
-						<strong>🐱eboy gremlin🦖</strong><small>#2408</small><br>
-						<div class="tags has-addons">
-							<div class="tag is-primary">Prnouns:</div>
-							<div class="tag">She/Her</div>
-						</div>
-						<div class="tags has-addons">
-							<div class="tag is-success">Kintypes:</div>
-							<div class="tag">Mountain Lion</div>
-							<div class="tag">Deinonychus</div>
-							<div class="tag">Werewolfkith</div>
-						</div>
-					</span>
-				</div>
-			</article>-->
+			<h1>Staff</h1>
+			{% include staff.html %}
 		</section>
 		<footer class="footer" id="join">
 			<div class="content has-text-centered tags has-addons is-centered">

@@ -1,3 +1,6 @@
+collections:
+    authors:
+        output: false
 plugins:
     - jekyll-feed
     - jekyll-sitemap

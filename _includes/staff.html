@@ -1,0 +1,20 @@
+{% for member in site.staff %}
+	<article class="media" style="content-visibility: auto">
+		<figure class="media-left"><p class="image is-64x64"><img src="{{ member.pfp }}" loading="lazy" alt="{{ member.name }} #{{ member.number }}"></p></figure>
+		<div class="media-content">
+			<div class="content">
+				<span>
+					<strong>{{ member.name }}</strong><small>#{{ member.number }}</small><br>
+					<div class="tags has-addons">
+						<div class="tag is-primary">Pronouns:</div>
+						{% for pronoun in member.pronouns %}<div class="tag">{{ pronoun }}</div>{% endfor %}
+					</div>
+					<div class="tags has-addons">
+						<div class="tag is-success">Kintypes:</div>
+						{% for kintype in member.kintypes %}<div class="tag">{{ kintype }}</div>{% endfor %}
+					</div>
+				</span>
+			</div>
+		</div>
+	</article>
+{% endfor %}
