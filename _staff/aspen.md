@@ -1,6 +1,6 @@
 ---
 name: Aspen
-number: 0427
+number: "0427"
 pfp: /images/aspen.png
 pronouns:
   - He/Him
