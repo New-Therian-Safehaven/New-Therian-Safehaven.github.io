@@ -1,5 +1,5 @@
 collections:
-    staff:
+  staff:
         output: false
         order:
             - pine_needle.md
@@ -7,3 +7,6 @@ collections:
             - mve.md
             - youta_funai.md
             - taga-ilog.md
+season:
+    enabled: false
+    src: "/images/seasons/2477.svg"
