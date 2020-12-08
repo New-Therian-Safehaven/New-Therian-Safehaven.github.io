@@ -7,7 +7,3 @@ collections:
             - mve.md
             - youta_funai.md
             - taga-ilog.md
-plugins:
-    - jekyll-feed
-    - jekyll-sitemap
-    - jekyll-seo-tag
