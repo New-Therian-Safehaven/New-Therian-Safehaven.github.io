@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="en">
 	<head>
+		<!-- Made with LGBT love -->
 		<meta charset="utf-8">
 		<title>New Therian Safehaven</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +50,9 @@
 			<div class="hero-body">
 				<div class="container">
 					<h1 class="title">
+						{% include season.html %}
 						Welcome to the New Therian Safehaven
+						{% include season.html %}
 					</h1>
 					<h2>
 						We're here for new therians, long time therians, and those wondering about therianthropy.
@@ -58,10 +61,19 @@
 			</div>
 		</section>
 		<section class="section" id="about">
-			<h1 class="title">About</h1><br>New Therian Safehaven is a server with the goal of bringing therians together. Therians can learn more about therianthropy, discover a small community, and interact with each other on New Therian Safehaven.
+			<h1 class="title">
+				{% include season.html %}
+				About
+				{% include season.html %}
+			</h1>
+			<p>New Therian Safehaven is a server with the goal of bringing therians together. Therians can learn more about therianthropy, discover a small community, and interact with each other on New Therian Safehaven.</p>
 		</section>
 		<section class="section" id="staff">
-			<h1 class="title">Staff</h1><br>
+			<h1 class="title">
+				{% include season.html %}
+				Staff
+				{% include season.html %}
+			</h1>
 			{% include staff.html %}
 		</section>
 		<section class="section" id="faq">
