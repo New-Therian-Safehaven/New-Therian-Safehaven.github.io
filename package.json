@@ -1,0 +1,27 @@
+{
+  "name": "new-therian-safehaven.github.io",
+  "version": "0.0.0",
+  "description": "NTSH website",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "serve": "astro dev",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/New-Therian-Safehaven/New-Therian-Safehaven.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/New-Therian-Safehaven/New-Therian-Safehaven.github.io/issues"
+  },
+  "homepage": "https://github.com/New-Therian-Safehaven/New-Therian-Safehaven.github.io#readme",
+  "dependencies": {
+    "astro": "^1.6.2",
+    "bulma": "^0.9.4"
+  }
+}

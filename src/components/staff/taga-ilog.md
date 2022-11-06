@@ -1,7 +1,7 @@
 ---
 name: taga-ilog
 number: 7371
-pfp: /images/taga-ilog.png
+pfp: /taga-ilog.png
 pronouns:
   - He/Him
   - Xe/Xim

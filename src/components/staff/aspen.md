@@ -1,7 +1,7 @@
 ---
 name: Aspen
 number: 0427
-pfp: /images/aspen.png
+pfp: /aspen.png
 pronouns:
   - He/Him
 kintypes:
