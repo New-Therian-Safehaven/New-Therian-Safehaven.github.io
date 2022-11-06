@@ -1,0 +1,21 @@
+---
+const named = `${Astro.props.name} #${Astro.props.number}`;
+---
+<article class="media" style="content-visibility: auto">
+	<figure class="media-left"><p class="image is-64x64"><img src={ Astro.props.pfp } loading="lazy" alt={ named }></p></figure>
+	<div class="media-content">
+		<div class="content">
+			<span>
+				<strong>{ Astro.props.name }</strong><small>#{Astro.props.number}</small><br>
+				<div class="tags has-addons">
+					<div class="tag is-primary">Pronouns:</div>
+					{ Astro.props.pronouns.map(pronoun => <div class="tag">{ pronoun }</div>) }
+				</div>
+				<div class="tags has-addons">
+					<div class="tag is-primary">Kintypes:</div>
+					{ Astro.props.kintypes.map(kintype => <div class="tag">{ kintype }</div>) }
+				</div>
+			</span>
+		</div>
+	</div>
+</article>

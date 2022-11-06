@@ -1,7 +1,7 @@
 ---
 name: M:VE ⇰ Your local cryptid.
 number: 3058
-pfp: /images/mve.png
+pfp: /mve.png
 pronouns:
   - He/Him
 kintypes:

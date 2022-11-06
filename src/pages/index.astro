@@ -1,4 +1,9 @@
 ---
+import Staff from '../components/staff/staff.astro';
+import 'bulma/css/bulma.min.css';
+const staff = await Astro.glob('../components/staff/*.md');
+
+// So far, this is a direct port from jekyll to astro. I will refactor the code... eventually. It will be a bit easier to read and go through.
 ---
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="en">
@@ -21,10 +26,7 @@
 		<meta property="og:url" content="https://New-Therian-Safehaven.github.io/" />
 		<meta property="og:description" content="Join our Therian-friendy Discord server" />
 		
-		{% feed_meta %}
-		{% seo %}
 		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" integrity="sha256-qS+snwBgqr+iFVpBB58C9UCxKFhyL03YHpZfdNUhSEw=" crossorigin="anonymous">
 	</head>
 	<body>
 		<section class="hero is-light is-fullheight is-bold section" id="title">
@@ -65,7 +67,7 @@
 		</section>
 		<section class="section" id="staff">
 			<h1 class="title">Staff</h1><br>
-			{% include staff.html %}
+			{ staff.map(member => <Staff name={ member.frontmatter.name } pfp={ member.frontmatter.pfp } number={ member.frontmatter.number } pronouns={ member.frontmatter.pronouns } kintypes={ member.frontmatter.kintypes }/>) }
 		</section>
 		<section class="section" id="faq">
 			<h1 class="title">FAQ</h1><br>
