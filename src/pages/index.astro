@@ -1,5 +1,9 @@
 ---
 import Staff from '../components/staff/staff.astro';
+import OGP from '../components/ogp.astro';
+import Cards from '../components/twitterCards.astro';
+import Navbar from '../components/navbar.astro';
+
 import 'bulma/css/bulma.min.css';
 const staff = await Astro.glob('../components/staff/*.md');
 
@@ -14,42 +18,16 @@ const staff = await Astro.glob('../components/staff/*.md');
 		<meta name="google-site-verification" content="Shc9YmCMCBTISww7LoMg5ocAA2S3MaLfMP_-RkYXeOA" />
 		<meta name="theme-color" content="#9E8D73">
 		<meta name="description" content="Join our Therian-friendy Discord server">
-		
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="New Therian Safehaven" />
-		<meta name="twitter:description" content="Join our Therian-friendy Discord server" />
-		<meta name="twitter:image" content="https://media.discordapp.net/attachments/638075990979117076/669652420674191370/unknown.png" />
-		
-		<meta property="og:title" content="New Therian Safehaven" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="https://media.discordapp.net/attachments/638075990979117076/669652420674191370/unknown.png" />
-		<meta property="og:url" content="https://New-Therian-Safehaven.github.io/" />
-		<meta property="og:description" content="Join our Therian-friendy Discord server" />
-		
+			
+		<OGP />
+
+		<Cards />
 		
 	</head>
 	<body>
 		<section class="hero is-light is-fullheight is-bold section" id="title">
 			<div class="hero-head">
-				<nav class="navbar">
-					<div class="container">
-						<div class="navbar-brand">
-							<a class="navbar-item" href="#">New Therian Safehaven</a>
-							<span class="navbar-burger burger" data-target="navbarcontent" onclick="document.getElementById('navbarcontent').classList.toggle('is-active')">
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-						</div>
-						<div id="navbarcontent" class="navbar-menu">
-							<div class="navbar-end">
-								<a class="navbar-item" href="#about" onclick="document.getElementById('navbarcontent').classList.toggle('is-active')">About</a>
-								<a class="navbar-item" href="#staff" onclick="document.getElementById('navbarcontent').classList.toggle('is-active')">Staff</a>
-								<a class="navbar-item" href="#join" onclick="document.getElementById('navbarcontent').classList.toggle('is-active')">Join</a>
-							</div>
-						</div>
-					</div>
-				</nav>
+				<Navbar />
 			</div>
 			<div class="hero-body">
 				<div class="container">
